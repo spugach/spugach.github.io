@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Notify</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7cOpen+Sans:400,600,700"
+            rel="stylesheet"
+        />
+        <link media="all" rel="stylesheet" href="css/main.css" />
+        <script src="js/jquery-1.12.4.min.js" defer></script>
+        <script src="js/jquery.main.js" defer></script>
+        <script src="js/infinite-scroll.pkgd.min.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header class="header">
+                <a href="#" class="logo"><img src="images/notifyai-logo.png" width="" height="" alt="logo"/></a>
+            </header>
+
+            <main id="main">
+                <div class="container">
+                    <div class="col-left">
+                        <div class="map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937645!2d2.2922926156840293!3d48.85837007928737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2z0K3QudGE0LXQu9C10LLQsCDQsdCw0YjQvdGP!5e0!3m2!1sru!2sua!4v1584298164208!5m2!1sru!2sua"
+                                width="100%"
+                                height="450"
+                                frameborder="0"
+                                style="border:0;"
+                                allowfullscreen=""
+                                aria-hidden="false"
+                                tabindex="0"
+                            ></iframe>
+                        </div>
+                        <div
+                            class="article"
+                            data-infinite-scroll='{ "path": ".pagination__next", "append": ".article-item", "status": ".scroller-status", "hideNav": ".pagination" }'
+                        >
+                            <div class="article-item">
+                                <div class="image">
+                                    <img src="images/bane.svg" alt="img" />
+                                </div>
+                                <div class="text">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae illo, debitis sequi
+                                    quisquam quibusdam voluptatibus nobis vero quaerat ea dolorem fugiat dolore facilis
+                                    odit unde earum aspernatur corrupti inventore id!
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- status elements -->
+                        <div class="scroller-status">
+                            <div class="infinite-scroll-request loader-ellips"></div>
+                            <p class="infinite-scroll-last">End of content</p>
+                            <p class="infinite-scroll-error">No more pages to load</p>
+                        </div>
+
+                        <!-- pagination has path -->
+                        <p class="pagination">
+                            <a class="pagination__next" href="page1.html">Next page</a>
+                        </p>
+                    </div>
+                    <div class="col-right">
+                        <div class="float-box">Floater box</div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
