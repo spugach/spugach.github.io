@@ -1,0 +1,23 @@
+.article {
+    margin-bottom: 20px;
+    &-item {
+        box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        padding: 20px 0;
+        margin: 20px 0;
+        text-align: center;
+        .image {
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+            margin: 20px 0;
+
+            img {
+                width: 100%;
+            }
+        }
+        .text {
+            padding: 20px 40px;
+        }
+    }
+}

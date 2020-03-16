@@ -1,0 +1,55 @@
+.resize-active {
+    * {
+        transition: none !important;
+    }
+}
+
+#wrapper {
+    position: relative;
+    overflow: hidden;
+    padding-top: 103px;
+}
+
+.container {
+    max-width: 1330px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+#main {
+    padding: 20px 0;
+}
+
+.col-left {
+    padding: 10px;
+}
+
+.col-right {
+    padding: 10px;
+
+    .float-box {
+        padding: 40px;
+        background: $yellow;
+        text-align: center;
+    }
+}
+
+@media (min-width: 480px) {
+    .col-left {
+        float: left;
+        width: 75%;
+        padding: 0 10px;
+    }
+
+    .col-right {
+        float: right;
+        width: 25%;
+        padding: 0 10px;
+        .float-box {
+            padding: 20px;
+            position: fixed;
+            top: 123px;
+            bottom: 20px;
+        }
+    }
+}
